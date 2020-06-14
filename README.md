@@ -1,6 +1,6 @@
 ## To do list
 This is an application made with nodeJS. A simple to do list practicing Node knowledge learned and made at <i><b>
-  Programador Super Full Stack</b></i> em 8 semanas course.
+  Programador Super Full Stack em 8 semanas</b></i> course.
 
 
 ## Technology 
