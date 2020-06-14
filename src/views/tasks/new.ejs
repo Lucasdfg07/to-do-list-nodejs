@@ -4,13 +4,13 @@
 
 <section class="section">
     <div class="container">
-      <h1 class="title size-4">Nova Tarefa</h1>
+      <h1 class="title size-4">New Task</h1>
 
       <form method="post" action="/checklists/<%= checklistId %>/tasks">
         <div class="field">
-            <label class="label">Nome</label>
+            <label class="label">Name</label>
             <div class="control">
-                <input class="input" type="text" name="task[name]" placeholder="Lista de Tarefas" value="<%= task.name %>">
+                <input class="input" type="text" name="task[name]" placeholder="Tasks List" value="<%= task.name %>">
     
                 <% if (task.error && task.error.hasOwnProperty('name')) { %>
                     <p class="is-danger help"><%= task.error.name.message %>></p>
@@ -18,8 +18,8 @@
             </div>
         </div>
     
-        <button type="submit" class="button is-success">Salvar</button>
-        <a href="/checklists/<%= checklistId %>" class="button">Cancelar</a>
+        <button type="submit" class="button is-success">Save</button>
+        <a href="/checklists/<%= checklistId %>" class="button">Cancel</a>
       </form>
     </div>
   </section>

@@ -6,11 +6,11 @@
     <div class="container">
         <div class="columns">
             <div class="column is-four-fifths">
-                <h1 class="title size-4">Listas de Tarefas</h1>
+                <h1 class="title size-4">Task List</h1>
             </div>
 
             <div class="column is-one-fifth">
-                <a href="/checklists/new" class="button is-success is-small">Nova Lista</a>
+                <a href="/checklists/new" class="button is-success is-small">New List</a>
             </div>
         </div>
 
@@ -23,26 +23,26 @@
                                 <%= checklist.name %>
                             </p>
                             <p class="subtitle is-size-6">
-                                <%= checklist.tasks.length %> tarefas
+                                <%= checklist.tasks.length %> tasks
                             </p>
                         </div>
 
                         <footer class="card-footer">
                             <p class="card-footer-item">
                                 <span>
-                                    <a href="checklists/<%= checklist._id %>">Ver</a>
+                                    <a href="checklists/<%= checklist._id %>">Show</a>
                                 </span>
                             </p>
 
                             <p class="card-footer-item">
                                 <span>
-                                    <a href="/checklists/<%= checklist.id %>/edit">Editar</a>
+                                    <a href="/checklists/<%= checklist.id %>/edit">Edit</a>
                                 </span>
                             </p>
 
                             <p class="card-footer-item">
                                 <span>
-                                    <a href="/checklists/<%= checklist.id %>?_method=delete" class="has-text-danger">Remover</a>
+                                    <a href="/checklists/<%= checklist.id %>?_method=delete" class="has-text-danger">Delete</a>
                                 </span>
                             </p>
                         </footer>
